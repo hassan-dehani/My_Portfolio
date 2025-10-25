@@ -123,7 +123,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/me_backless_bg.png" class="img-fluid" alt="">
+            <img src="assets/img/me_bg.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
             <h2>Data Analyst &amp; Security Analyst.</h2>
@@ -742,13 +742,13 @@
       </div>
 
     </section><!-- /Testimonials Section -->
-    <!-- Contact Section -->
+<!-- Contact Section -->
 <section id="contact" class="contact section">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <p>Whether it’s a collaboration or a question, I’m just a message away.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -762,7 +762,7 @@
               <h3>Address</h3>
               <p>G-769, Warsia Colony, Orangi Town, Karachi West</p>
             </div>
-          </div><!-- End Info Item -->
+          </div>
 
           <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
             <i class="bi bi-telephone flex-shrink-0"></i>
@@ -770,7 +770,7 @@
               <h3>Call Us</h3>
               <p>+92 325 2076209</p>
             </div>
-          </div><!-- End Info Item -->
+          </div>
 
           <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
             <i class="bi bi-envelope flex-shrink-0"></i>
@@ -778,14 +778,14 @@
               <h3>Email Us</h3>
               <p>hassanbsit1@gmail.com</p>
             </div>
-          </div><!-- End Info Item -->
+          </div>
 
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1458.9445703966167!2d66.99065684977997!3d24.954843478501793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1758897340236!5m2!1sen!2s" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
       <div class="col-lg-7">
-        <form id="contact-form" action="#" class="php-email-form" data-aos="fade-up" data-aos-delay="200" novalidate>
+        <form id="contact-form" class="php-email-form" novalidate>
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -837,7 +837,7 @@
     const submitBtn = form.querySelector('button[type="submit"]');
 
     form.addEventListener('submit', function (e) {
-      e.preventDefault();
+      e.preventDefault(); // Prevent default form submission
 
       if (loading) loading.style.display = 'block';
       if (errorMessage) { errorMessage.style.display = 'none'; errorMessage.textContent = ''; }
